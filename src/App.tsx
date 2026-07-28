@@ -29,6 +29,7 @@ function App() {
 
   return (
     <div className="container">
+      <h1>Time Remaining</h1>
       <h1>
         {days}d {String(hours).padStart(2, "0")}:
         {String(minutes).padStart(2, "0")}:
