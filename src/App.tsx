@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const TARGET_DATE = new Date("2026-07-29T00:00:00");
+const TARGET_DATE = new Date("2026-07-30T00:00:00");
 
 function App() {
   const [timeLeft, setTimeLeft] = useState(0);
