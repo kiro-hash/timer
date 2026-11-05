@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const TARGET_DATE = new Date("2026-11-5T01:00:00");
+const TARGET_DATE = new Date("2026-11-5T13:00:00");
 
 function App() {
   const [timeLeft, setTimeLeft] = useState(0);
@@ -9,13 +9,15 @@ function App() {
     const updateTimer = () => {
       const remaining = Math.max(
         0,
-        Math.floor((TARGET_DATE.getTime() - Date.now()) / 1000)
+        Math.floor(
+          (TARGET_DATE.getTime() - Date.now()) / 1000,
+        ),
       );
 
       setTimeLeft(remaining);
     };
 
-    updateTimer(); 
+    updateTimer();
 
     const interval = setInterval(updateTimer, 1000);
 
